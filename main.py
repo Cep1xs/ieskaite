@@ -1,0 +1,17 @@
+import ladite as lad
+from datetime import datetime 
+print("Labdien, šeit būs jūsu rēķins!")
+print("Lūdzu, ievadiet lielumus lai mēs varētu aprēķināt lādites cenu!")
+kl_vards = input("Kā jūs sauc?")
+velt_txt = input("Ievadiet ko jūs velaties")
+print("Tagat ievadiet lielumus mm :")
+garums = input("garums:")
+platums = input("platum:")
+augstums = input("audstums:")
+cena_m2 = input("Ievadiet kokmateriāla cenu EUR/m 2 :")
+cur_time = datetime.now()
+print("Programma apstrādā jūsu pieprasijumu")
+print(F"Jūsu pasūtijuma laiks ir {cur_time}")
+print(F"Jūsu vārds {kl_vards}")
+print(F"Jūsu pasūtijuma apraksts  {velt_txt}")
+print(F"Jūsu Ladites lielumi  {garums}mm garums , {platums}mm platums, {augstums}mm augstums")
